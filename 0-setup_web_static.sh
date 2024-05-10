@@ -24,7 +24,7 @@ echo "<html>
 if [ -L /data/web_static/current ]; then
     rm /data/web_static/current
 fi
-ln -s /data/web_static/releases/test /data/web_static/current
+ln -sf /data/web_static/releases/test /data/web_static/current
 
 # Give ownership of /data folder to ubuntu user and group recursively
 chown -R ubuntu:ubuntu /data/
